@@ -23,7 +23,8 @@ import PaymentHistory from './src/screens/PaymentHistory';
 import AddService from './src/screens/AddService';
 import EditService from './src/screens/EditService';
 import ServiceDashboard from './src/screens/ServiceDashboard';
-
+import CustomerData from './src/screens/CustomerData';
+import AppointmentData from './src/screens/AppointmentData';
 // Auth Screens
 import Login from './src/screens/Login';
 import Register from './src/screens/Register';
@@ -73,6 +74,8 @@ function MainTabs() {
             <Tab.Screen name="ManageAppointments" component={ManageAppointments} options={{ title: 'Manage' }} />
             <Tab.Screen name="PaymentHistory" component={PaymentHistory} options={{ title: 'Payments' }} />
             <Tab.Screen name="DonationSummary" component={DonationSummary} options={{ title: 'Donations' }} />
+             <Tab.Screen name="CustomerData" component={CustomerData} options={{ title: 'Customers' }} />
+            <Tab.Screen name="AppointmentData" component={AppointmentData} options={{ title: 'Appointments' }} />
             <Tab.Screen name="Profile" component={Profile} options={{ title: 'Profile' }} />
           </>
         )}
@@ -85,6 +88,8 @@ function MainTabs() {
             <Tab.Screen name="ManageAppointments" component={ManageAppointments} options={{ title: 'Appointments' }} />
             <Tab.Screen name="DonationSummary" component={DonationSummary} options={{ title: 'Donations' }} />
             <Tab.Screen name="ServiceDashboard" component={ServiceDashboard} options={{ title: 'Services' }} />
+            <Tab.Screen name="CustomerData" component={CustomerData} options={{ title: 'Customers' }} />
+            <Tab.Screen name="AppointmentData" component={AppointmentData} options={{ title: 'Appointments' }} />
             <Tab.Screen name="Profile" component={Profile} options={{ title: 'Profile' }} />
           </>
         )}
